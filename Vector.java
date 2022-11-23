@@ -28,6 +28,15 @@ class Vector {
         arr = newArr;
     }
 
+    private void downsize() {
+        Integer[] newArr = new Integer[(int) Math.pow(2, pow) / 2];
+        for(int i = 0; i < arrSize / 2; i++) {
+            newArr[i] = arr[i];
+        }
+        arrSize = (int) Math.pow(2, pow) / 2;
+        arr = newArr;
+    }
+
     public int size() {
 
         /**
@@ -143,7 +152,37 @@ class Vector {
     public int pop() {
         int popped = arr[size() - 1];
         arr[size() - 1] = null;
+        if(size() < arrSize / 4) {
+            downsize();
+        }
         return popped;
+    }
+
+    public void delete(int index) {
+        for(int i = index; i < arrSize - 1; i++) {
+            arr[i] = arr[i + 1];
+        }
+    }
+
+    public void remove(int item) {
+        for(int i = 0; i < arrSize - 1; i++) {
+            if(arr[i] != null) {
+                if(arr[i] == item) {
+                    delete(i);
+                }
+            }
+        }
+    }
+
+    public int find(int item) {
+        for(int i = 0; i < arrSize - 1; i++) {
+            if(arr[i] != null && arr[i] == item) {
+                return i;
+            }
+        }
+
+
+        return -1;
     }
 
 

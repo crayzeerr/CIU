@@ -6,44 +6,22 @@ public class Main {
             vector.push(i);
         }
 
-        print(vector);
-        System.out.println(vector.size());
 
+        for(int i = 0; i < 13; i++) {
+            vector.pop();
+            print(vector);
+        }
 
+        System.out.println(vector.capacity());
 
-        vector.insert(3, 2);
-        print(vector);
-        System.out.println(vector.size());
+        for(int i = 0; i < 10; i++) {
+            vector.push(i);
+            print(vector);
+        }
 
-
-
-        vector.push(20025190);
-        print(vector);
-        System.out.println(vector.size());
         
+        System.out.println(vector.capacity());
 
-
-        vector.insert(2, 4);
-        print(vector);
-        System.out.println(vector.size());
-
-
-
-        vector.insert(0, -1);
-        print(vector);
-        System.out.println(vector.size());
-
-        vector.prepend(100);
-        print(vector);
-        System.out.println(vector.size());
-
-
-        vector.pop();
-        print(vector);
-        System.out.println(vector.size());
-
-        System.out.println("Capacity: " + vector.capacity());
-        
 
     }
 
