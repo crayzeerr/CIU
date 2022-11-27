@@ -1,26 +1,7 @@
 public class Main {
+    //THIS CLASS IS FOR TESTING IMPLEMENTATIONS
     public static void main(String[] args) throws Exception {
-        Vector vector = new Vector(1); 
-
-        for(int i = 0; i < 16; i++) {
-            vector.push(i);
-        }
-
-
-        for(int i = 0; i < 13; i++) {
-            vector.pop();
-            print(vector);
-        }
-
-        System.out.println(vector.capacity());
-
-        for(int i = 0; i < 10; i++) {
-            vector.push(i);
-            print(vector);
-        }
-
-        
-        System.out.println(vector.capacity());
+        // Vector vector = new Vector(1); 
 
 
     }
