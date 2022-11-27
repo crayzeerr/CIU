@@ -3,6 +3,9 @@ public class Main {
     public static void main(String[] args) throws Exception {
         // Vector vector = new Vector(1); 
 
+        ListNode node = new ListNode(5);
+        System.out.println(node.toString());
+
 
     }
 

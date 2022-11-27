@@ -11,6 +11,10 @@ public class ListNode {
         this(item, null);
     }
 
+    public String toString() {
+        return item.toString();
+    }
 
-    
+
+
 }
