@@ -15,6 +15,10 @@ public class ListNode {
         return item.toString();
     }
 
+    public String nextNode() {
+        return next.item.toString();
+    }
+
     public void insertAfter(Object item) {
         ListNode node = new ListNode(item, this.next);
         //make new node object, assign item, set pointer to current nodes pointer

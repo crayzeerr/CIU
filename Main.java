@@ -6,6 +6,10 @@ public class Main {
         ListNode node = new ListNode(5);
         System.out.println(node.toString());
 
+        node.insertAfter(7);
+        System.out.println(node.next.nextNode());
+        
+
 
     }
 
