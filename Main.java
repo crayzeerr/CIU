@@ -2,12 +2,7 @@ public class Main {
     //THIS CLASS IS FOR TESTING IMPLEMENTATIONS
     public static void main(String[] args) throws Exception {
         // Vector vector = new Vector(1); 
-
         ListNode node = new ListNode(5);
-        System.out.println(node.toString());
-
-        node.insertAfter(7);
-        System.out.println(node.next.nextNode());
         
 
 
